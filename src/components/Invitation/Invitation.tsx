@@ -28,9 +28,9 @@ export default function Invitation() {
     className="w-32 h-32 md:w-40 md:h-40 object-contain"
   />
 </motion.div>
-        <p
+   <p
   style={{ fontFamily: "Cinzel" }}
-  className="text-center text-sm md:text-base tracking-[3px] text-[#B8860B]"
+  className="text-center text-xs tracking-[2px] text-[#B8860B]"
 >
   Sriastu &nbsp; | &nbsp; Shubhamastu &nbsp; | &nbsp; Avighnamastu
 </p>
