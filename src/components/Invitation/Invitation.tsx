@@ -30,7 +30,7 @@ export default function Invitation() {
 </motion.div>
    <p
   style={{ fontFamily: "Cinzel" }}
-  className="text-center text-xs tracking-[2px] text-[#B8860B]"
+  className="text-center text-xs tracking-[1px] text-[#B8860B]"
 >
   Sriastu &nbsp; | &nbsp; Shubhamastu &nbsp; | &nbsp; Avighnamastu
 </p>
