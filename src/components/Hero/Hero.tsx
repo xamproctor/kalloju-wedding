@@ -46,7 +46,7 @@ export default function Hero() {
             <img
               src={ganesha}
               alt="Lord Ganesha"
-              className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 object-contain drop-shadow-[0_0_25px_rgba(212,175,55,0.6)]"
+              className="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain drop-shadow-[0_0_35px_rgba(212,175,55,0.7)]"
             />
           </motion.div>
 
