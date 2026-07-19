@@ -10,33 +10,19 @@ export default function Hero() {
       className="relative h-screen overflow-hidden"
     >
       {/* Background */}
-    <div className="absolute inset-0 flex items-center justify-center px-6">
-  <img
-    src={hero}
-    alt="Wedding Hero"
-    className="
-      w-full
-      max-w-[320px]
-      sm:max-w-[380px]
-      md:max-w-[480px]
-      lg:max-w-[600px]
-      rounded-[30px]
-      border-[6px]
-      md:border-8
-      border-[#D4AF37]
-      shadow-[0_20px_60px_rgba(0,0,0,0.4)]
-      object-contain
-    "
-  />
-</div>
+      <img
+        src={hero}
+        alt="Wedding Hero"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/45 to-black/70" />
       <div className="absolute inset-0 bg-[#D4AF37]/5" />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full items-center justify-center px-6">
-        <div className="max-w-5xl text-center">
+      <div className="relative z-10 flex h-full items-center justify-center px-4 sm:px-6">
+        <div className="w-full max-w-[340px] sm:max-w-[430px] md:max-w-3xl lg:max-w-5xl text-center mx-auto">
 
           {/* Ganesha */}
           <motion.div
@@ -60,7 +46,7 @@ export default function Hero() {
             <img
               src={ganesha}
               alt="Lord Ganesha"
-              className="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 object-contain drop-shadow-[0_0_35px_rgba(212,175,55,0.7)]"
+              className="w-28 h-28 sm:w-36 sm:h-36 md:w-52 md:h-52 lg:w-64 lg:h-64 object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.7)]"
             />
           </motion.div>
 
@@ -70,7 +56,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             style={{ fontFamily: "Cinzel" }}
-            className="uppercase tracking-[10px] text-white text-sm md:text-lg"
+            className="uppercase tracking-[4px] sm:tracking-[8px] text-[10px] sm:text-sm md:text-lg text-white"
           >
             Wedding Invitation
           </motion.p>
@@ -92,7 +78,18 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.8 }}
             style={{ fontFamily: "Great Vibes" }}
-            className="mt-4 text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-lg"
+            className="
+mt-4
+text-[2.6rem]
+sm:text-5xl
+md:text-7xl
+lg:text-8xl
+leading-none
+text-white
+drop-shadow-lg
+px-2
+break-words
+"
           >
             {weddingData.groom.name}
           </motion.h1>
@@ -115,7 +112,17 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.3 }}
             style={{ fontFamily: "Great Vibes" }}
-           className="text-5xl sm:text-6xl md:text-8xl"
+            className="
+text-[2.6rem]
+sm:text-5xl
+md:text-7xl
+lg:text-8xl
+leading-none
+text-white
+drop-shadow-lg
+px-2
+break-words
+"
           >
             {weddingData.bride.name}
           </motion.h1>
@@ -137,7 +144,14 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.8 }}
             style={{ fontFamily: "Cormorant Garamond" }}
-            className="text-lg sm:text-xl md:text-2xl"
+            className="
+mt-3
+text-base
+sm:text-xl
+md:text-3xl
+text-[#F6D87A]
+px-4
+"
           >
             {weddingData.wedding.venue}
           </motion.p>
