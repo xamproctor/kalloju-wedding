@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="mt-10 h-px w-40 bg-[#D4AF37] mx-auto"></div>
 
         <p className="mt-8 text-xl text-[#D4AF37]">
-          Dr. Dileep Kumar ❤️ Keerthana
+           Keerthana ❤️ Dr. Dileep Kumar
         </p>
 
         <p className="mt-2 text-sm text-gray-400">

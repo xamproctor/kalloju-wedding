@@ -10,11 +10,13 @@ export default function Hero() {
       className="relative h-screen overflow-hidden"
     >
       {/* Background */}
-      <img
-        src={hero}
-        alt="Wedding Hero"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+     <div className="absolute inset-0 flex items-center justify-center">
+  <img
+    src={hero}
+    alt="Wedding Hero"
+    className="w-[80%] md:w-[65%] lg:w-[50%] rounded-[30px] border-8 border-[#D4AF37] shadow-[0_20px_60px_rgba(0,0,0,0.4)] object-cover"
+  />
+</div>
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/45 to-black/70" />

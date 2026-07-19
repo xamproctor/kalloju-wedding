@@ -1,14 +1,14 @@
 export const weddingData = {
   groom: {
-    name: "Dr. Dileep Kumar",
-  },
-
-  bride: {
     name: "Keerthana",
   },
 
+  bride: {
+    name:"Dr. Dileep Kumar" ,
+  },
+
   blessings: {
-    elder: "Late Sri Fothedar Rangaswamy",
+    elder: "Late Sri Kamsali Sinivasa chary",
   },
 
  wedding: {
@@ -33,13 +33,7 @@ export const weddingData = {
       location: "Somishetty Tanish Convention, Kurnool",
       icon: "💍",
     },
-    {
-      title: "Sri Satyanarayana Swamy Vratham",
-      date: "17 August 2026",
-      time: "10:30 AM",
-      location: "At our Home, Ramalayam Back Side, Wanaparthy",
-      icon: "🪔",
-    },
+  
   ],
 
   gallery: [
