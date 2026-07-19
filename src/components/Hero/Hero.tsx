@@ -10,11 +10,23 @@ export default function Hero() {
       className="relative h-screen overflow-hidden"
     >
       {/* Background */}
-     <div className="absolute inset-0 flex items-center justify-center">
+    <div className="absolute inset-0 flex items-center justify-center px-6">
   <img
     src={hero}
     alt="Wedding Hero"
-    className="w-[80%] md:w-[65%] lg:w-[50%] rounded-[30px] border-8 border-[#D4AF37] shadow-[0_20px_60px_rgba(0,0,0,0.4)] object-cover"
+    className="
+      w-full
+      max-w-[320px]
+      sm:max-w-[380px]
+      md:max-w-[480px]
+      lg:max-w-[600px]
+      rounded-[30px]
+      border-[6px]
+      md:border-8
+      border-[#D4AF37]
+      shadow-[0_20px_60px_rgba(0,0,0,0.4)]
+      object-contain
+    "
   />
 </div>
 
@@ -103,7 +115,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.3 }}
             style={{ fontFamily: "Great Vibes" }}
-            className="text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-lg"
+           className="text-5xl sm:text-6xl md:text-8xl"
           >
             {weddingData.bride.name}
           </motion.h1>
@@ -125,7 +137,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.8 }}
             style={{ fontFamily: "Cormorant Garamond" }}
-            className="mt-3 text-xl md:text-3xl text-[#F6D87A]"
+            className="text-lg sm:text-xl md:text-2xl"
           >
             {weddingData.wedding.venue}
           </motion.p>
